@@ -14,7 +14,7 @@ dotenv.config();
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([User, UserRepositoty]),
+    TypeOrmModule.forFeature([User]),
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.registerAsync({
       imports: [ConfigModule],
